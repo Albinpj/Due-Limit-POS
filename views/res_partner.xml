@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_pos_due_limit_inherit" model="ir.ui.view">
+            <field name="name">POS Due Limit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="vat" position="after">
+                    <field name="pos_due_limit"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
